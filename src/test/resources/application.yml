@@ -1,0 +1,4 @@
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin://localhost:32769/XE
