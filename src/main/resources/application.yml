@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:32771:XE
+    username: keyhan
+    password: spring04
+
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    database: ORACLE
+    show-sql: true
+#    hibernate:
+#      ddl-auto: create-drop
+#      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy

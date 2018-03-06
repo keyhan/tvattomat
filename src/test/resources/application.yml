@@ -1,4 +1,10 @@
 spring:
   datasource:
     driverClassName: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin://localhost:32769/XE
+    url: jdbc:oracle:thin:@localhost:32769:XE
+    username: keyhan
+    password: spring04
+
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
